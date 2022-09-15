@@ -249,7 +249,7 @@ export default class ReactGridLayout extends React.Component<Props, State> {
     const { layout } = this.state;
     const l = getLayoutItem(layout, i);
     if (!l) return;
-
+    console.log(l,'插件GridLayout的L');
     this.setState({
       oldDragItem: cloneLayoutItem(l),
       oldLayout: layout
