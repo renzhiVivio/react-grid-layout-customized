@@ -128,6 +128,7 @@ var ReactGridLayout = /*#__PURE__*/function (_React$Component) {
           node = _ref.node;
       var layout = _this.state.layout;
       var l = (0, _utils.getLayoutItem)(layout, i);
+      console.log(l, '插件GridLayout的L onDragStart');
       if (!l) return;
 
       _this.setState({
@@ -148,6 +149,7 @@ var ReactGridLayout = /*#__PURE__*/function (_React$Component) {
           allowOverlap = _this$props.allowOverlap,
           preventCollision = _this$props.preventCollision;
       var l = (0, _utils.getLayoutItem)(layout, i);
+      console.log(l, '插件GridLayout的L onDrag');
       if (!l) return; // Create placeholder (display only)
 
       var placeholder = {

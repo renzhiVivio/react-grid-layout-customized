@@ -248,6 +248,7 @@ export default class ReactGridLayout extends React.Component<Props, State> {
   ) => {
     const { layout } = this.state;
     const l = getLayoutItem(layout, i);
+    console.log(l,'插件GridLayout的L onDragStart');
     if (!l) return;
 
     this.setState({
@@ -276,6 +277,7 @@ export default class ReactGridLayout extends React.Component<Props, State> {
     let { layout } = this.state;
     const { cols, allowOverlap, preventCollision } = this.props;
     const l = getLayoutItem(layout, i);
+    console.log(l,'插件GridLayout的L onDrag');
     if (!l) return;
 
     // Create placeholder (display only)
