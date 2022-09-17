@@ -249,7 +249,6 @@ export default class ReactGridLayout extends React.Component<Props, State> {
     const { layout } = this.state;
     const l = getLayoutItem(layout, i);
     if (!l) return;
-    console.log(l,'插件L onDragStart');
 
     this.setState({
       oldDragItem: cloneLayoutItem(l),
@@ -278,7 +277,6 @@ export default class ReactGridLayout extends React.Component<Props, State> {
     const { cols, allowOverlap, preventCollision } = this.props;
     const l = getLayoutItem(layout, i);
     if (!l) return;
-    console.log(l,'插件L onDrag');
 
     // Create placeholder (display only)
     const placeholder = {
